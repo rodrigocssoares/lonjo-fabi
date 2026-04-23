@@ -90,7 +90,7 @@ export default function LandingPage() {
                 Destaque
               </div>
               <p className="mt-2 text-base leading-relaxed">
-                Fabi Guttin é multi recordista e multi medalhista na natação master. Aos 70+, segue quebrando barreiras com paixão, disciplina e energia.
+                Fabi Guttin é multi recordista e medalhista na natação master. Aos 70+, segue quebrando barreiras com paixão, disciplina e energia.
               </p>
             </div>
           </div>
@@ -114,6 +114,66 @@ export default function LandingPage() {
             <p className="text-sm leading-relaxed">
               Um encontro de histórias, experiências e amor pelo mar.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 md:px-10 py-10 md:py-16">
+        <div className="space-y-6">
+          <div className="rounded-[2rem] bg-white p-8 md:p-10 shadow-xl border border-[#d9edf7]">
+            <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
+              Sobre a convidada
+            </div>
+            <h2 className="mt-3 text-3xl md:text-5xl font-semibold leading-tight">
+              Fabi Guttin
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-[#355a77]">
+              Multi recordista e medalhista na natação master, aos 70+ segue quebrando barreiras, desenvolvendo projetos e inspirando gerações com sua paixão, disciplina e energia dentro e fora d&apos;água. <strong>Lonjovialidade pura!</strong>
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
+              Em 2025 cumpriu o impressionante desafio de nadar <strong>70 km em 7 dias aos 70 anos</strong>, reforçando que longevidade e movimento caminham juntos e que idade não é limite para quem se prepara para o futuro.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
+              O desafio inspirou a produção do documentário <strong>Véia Nada</strong>, que começa a ser exibido em festivais.
+            </p>
+            <div className="mt-8">
+              <a
+                href={formUrl}
+                className="inline-flex items-center justify-center rounded-full bg-[#0f3f66] px-6 py-3 text-base font-semibold text-white shadow-lg hover:scale-[1.02] transition"
+              >
+                Quero participar
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] bg-white shadow-xl border border-[#d9edf7] overflow-hidden">
+            <img
+              src={posto6Image}
+              alt="Vista do Posto 6 em Copacabana"
+              className="w-full h-[280px] md:h-[360px] object-cover"
+            />
+            <div className="p-8 md:p-10">
+              <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
+                Sobre o local do evento
+              </div>
+              <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight">
+                Posto 6, Copacabana
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-[#355a77]">
+                O Posto 6 é um dos pontos mais tradicionais da natação no mar do Rio de Janeiro. Com águas geralmente mais tranquilas e uma rotina já conhecida por nadadores experientes, é local de treino e ponto de encontro de diversas assessorias de natação.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
+                Além da beleza icônica de Copacabana vista do mar, o local reúne esporte, convivência e cultura de águas abertas, criando o cenário ideal para um encontro especial como este.
+              </p>
+              <div className="mt-8">
+                <a
+                  href={formUrl}
+                  className="inline-flex items-center justify-center rounded-full bg-[#0f3f66] px-6 py-3 text-base font-semibold text-white shadow-lg hover:scale-[1.02] transition"
+                >
+                  Quero participar
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -168,58 +228,6 @@ export default function LandingPage() {
             <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
               Seu trabalho inclui treinos, preparação de nadadores e projetos voltados a travessias e experiências em mar aberto.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="max-w-5xl mx-auto px-6 md:px-10 py-10 md:py-16">
-        <div className="space-y-6">
-          <div className="rounded-[2rem] bg-white p-8 md:p-10 shadow-xl border border-[#d9edf7]">
-            <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
-              Sobre a convidada
-            </div>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold leading-tight">
-              Fabi Guttin
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-[#355a77]">
-              Multi recordista e medalhista na natação master, aos 70+ segue quebrando barreiras, desenvolvendo projetos e inspirando gerações com sua paixão, disciplina e energia dentro e fora d&apos;água. <strong>Lonjovialidade pura!</strong>
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
-              Em 2025 cumpriu o impressionante desafio de nadar <strong>70 km em 7 dias aos 70 anos</strong>, reforçando que longevidade e movimento caminham juntos e que idade não é limite para quem se prepara para o futuro.
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
-              O desafio inspirou a produção do documentário <strong>Véia Nada</strong>, que começa a ser exibido em festivais.
-            </p>
-            <div className="mt-8">
-              <a
-                href={formUrl}
-                className="inline-flex items-center justify-center rounded-full bg-[#0f3f66] px-6 py-3 text-base font-semibold text-white shadow-lg hover:scale-[1.02] transition"
-              >
-                Quero participar
-              </a>
-            </div>
-          </div>
-
-          <div className="rounded-[2rem] bg-white shadow-xl border border-[#d9edf7] overflow-hidden">
-            <img
-              src={posto6Image}
-              alt="Vista do Posto 6 em Copacabana"
-              className="w-full h-[280px] md:h-[360px] object-cover"
-            />
-            <div className="p-8 md:p-10">
-              <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
-                Sobre o local do evento
-              </div>
-              <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight">
-                Posto 6, Copacabana
-              </h2>
-              <p className="mt-6 text-lg leading-relaxed text-[#355a77]">
-                O Posto 6 é um dos pontos mais tradicionais da natação no mar do Rio de Janeiro. Com águas geralmente mais tranquilas e uma rotina já conhecida por nadadores experientes, é local de treino e ponto de encontro de diversas assessorias de natação.
-              </p>
-              <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
-                Além da beleza icônica de Copacabana vista do mar, o local reúne esporte, convivência e cultura de águas abertas, criando o cenário ideal para um encontro especial como este.
-              </p>
-            </div>
           </div>
         </div>
       </section>
