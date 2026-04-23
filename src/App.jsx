@@ -18,80 +18,62 @@ export default function LandingPage() {
         />
 
         <div className="relative max-w-6xl mx-auto px-6 py-8 md:px-10 md:py-12">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="flex items-center gap-4 flex-wrap">
-              <div className="rounded-2xl bg-white/80 backdrop-blur px-4 py-3 shadow-lg">
-                <img
-                  src={andreaLogo}
-                  alt="Logo Andrea Orlandi"
-                  className="h-16 md:h-20 w-auto object-contain"
-                />
-              </div>
-              <div className="text-4xl md:text-5xl font-light">+</div>
-              <div className="rounded-2xl bg-white/80 backdrop-blur px-4 py-3 shadow-lg">
-                <img
-                  src={lonjoLogo}
-                  alt="Logo Lonjô"
-                  className="h-16 md:h-20 w-auto object-contain"
-                />
-              </div>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <div className="rounded-2xl bg-white/80 backdrop-blur px-4 py-3 shadow-lg">
+              <img
+                src={andreaLogo}
+                alt="Logo Andrea Orlandi"
+                className="h-16 md:h-20 w-auto object-contain"
+              />
             </div>
-
-            <a
-              href={formUrl}
-              className="inline-flex items-center justify-center rounded-full bg-[#f2b532] px-6 py-3 text-base font-semibold text-[#0f3f66] shadow-lg hover:scale-[1.02] transition"
-            >
-              Quero participar
-            </a>
+            <div className="text-4xl md:text-5xl font-light">+</div>
+            <div className="rounded-2xl bg-white/80 backdrop-blur px-4 py-3 shadow-lg">
+              <img
+                src={lonjoLogo}
+                alt="Logo Lonjô"
+                className="h-16 md:h-20 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 md:px-10 pb-12 md:pb-16">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
           <div className="space-y-6">
             <div className="inline-block rounded-full bg-[#f2b532] px-4 py-2 text-[#0f3f66] font-bold uppercase tracking-[0.2em] text-sm shadow">
-              Marque na Agenda
+              Marque na agenda
             </div>
 
-            <div>
+            <div className="space-y-2">
               <div className="text-6xl md:text-8xl leading-none font-black text-[#0f3f66]">
                 23/05
               </div>
-              <div className="mt-3 text-lg md:text-xl font-medium text-[#2a7fb8]">
+              <div className="text-lg md:text-xl font-medium text-[#2a7fb8]">
                 Posto 6, Copacabana · Rio de Janeiro
+              </div>
+              <div className="text-base md:text-lg font-semibold text-[#0f3f66]">
+                Início às 08:00
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-4 max-w-2xl">
               <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
                 Lonjô e Andrea Orlandi recebem{" "}
                 <span className="text-[#1f8ac0] italic">Fabi Guttin</span> para um encontro no mar.
               </h1>
-              <p className="text-lg md:text-xl leading-relaxed text-[#28506e]">
+              <p className="text-lg md:text-xl leading-relaxed text-[#28506e] max-w-xl">
                 Uma manhã especial para celebrar a natação, a longevidade ativa e os nadadores que seguem inspirando gerações dentro e fora d&apos;água.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-4 pt-2">
-              <div className="rounded-3xl bg-white p-5 shadow-md">
-                <div className="text-3xl mb-2">🌊</div>
-                <p className="text-sm leading-relaxed">
-                  Inspiração para todos os nadadores do mar, em especial os masters.
-                </p>
-              </div>
-              <div className="rounded-3xl bg-white p-5 shadow-md">
-                <div className="text-3xl mb-2">🏊</div>
-                <p className="text-sm leading-relaxed">
-                  Uma celebração aos nadadores mais longevos do esporte.
-                </p>
-              </div>
-              <div className="rounded-3xl bg-white p-5 shadow-md">
-                <div className="text-3xl mb-2">💙</div>
-                <p className="text-sm leading-relaxed">
-                  Um encontro de histórias, experiências e amor pelo mar.
-                </p>
-              </div>
+            <div className="pt-2">
+              <a
+                href={formUrl}
+                className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-[#f2b532] px-8 py-4 text-lg font-semibold text-[#0f3f66] shadow-lg hover:scale-[1.02] transition"
+              >
+                Quero participar
+              </a>
             </div>
           </div>
 
@@ -100,17 +82,38 @@ export default function LandingPage() {
               <img
                 src={fabiImage}
                 alt="Fabi Guttin"
-                className="w-full h-[580px] object-cover rounded-[1.5rem]"
+                className="w-full h-[440px] md:h-[620px] object-cover rounded-[1.5rem]"
               />
             </div>
-            <div className="absolute -bottom-5 -left-4 md:-left-8 rounded-3xl bg-[#0f3f66] text-white p-5 md:p-6 shadow-xl max-w-xs">
+            <div className="absolute left-4 bottom-4 md:left-6 md:bottom-6 rounded-3xl bg-[#0f3f66] text-white p-5 md:p-6 shadow-xl max-w-[330px]">
               <div className="text-sm uppercase tracking-[0.2em] text-[#8fd8ff]">
                 Destaque
               </div>
               <p className="mt-2 text-base leading-relaxed">
-                Fabi Guttin é multi recordista e medalhista na natação master. Aos 70+, segue quebrando barreiras com paixão, disciplina e energia.
+                Fabi Guttin é multi recordista e multi medalhista na natação master. Aos 70+, segue quebrando barreiras com paixão, disciplina e energia.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="grid sm:grid-cols-3 gap-4 pt-8 md:pt-10">
+          <div className="rounded-3xl bg-white p-5 shadow-md">
+            <div className="text-3xl mb-2">🌊</div>
+            <p className="text-sm leading-relaxed">
+              Inspiração para todos os nadadores do mar, em especial os masters.
+            </p>
+          </div>
+          <div className="rounded-3xl bg-white p-5 shadow-md">
+            <div className="text-3xl mb-2">🏊</div>
+            <p className="text-sm leading-relaxed">
+              Uma celebração aos nadadores mais longevos do esporte.
+            </p>
+          </div>
+          <div className="rounded-3xl bg-white p-5 shadow-md">
+            <div className="text-3xl mb-2">💙</div>
+            <p className="text-sm leading-relaxed">
+              Um encontro de histórias, experiências e amor pelo mar.
+            </p>
           </div>
         </div>
       </section>
@@ -126,13 +129,13 @@ export default function LandingPage() {
               />
               <div>
                 <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
-                  Sobre
+                  Sobre Lonjô
                 </div>
                 <h2 className="text-3xl md:text-4xl font-semibold mt-1">Lonjô</h2>
               </div>
             </div>
             <p className="text-lg leading-relaxed text-[#355a77]">
-              Lonjô é uma iniciativa do administrador, surfista e triatleta <strong>Rodrigo Soares</strong>, criada para incentivar uma longevidade ativa e jovial.
+              Lonjô é uma iniciativa do administrador, surfista e triatleta <strong>Rodrigo Soares</strong>, criada para promover a longevidade ativa com espírito jovial.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
               A proposta é inspirar pessoas a atravessarem o tempo com mais movimento, energia, presença e entusiasmo, traduzindo na prática o conceito de <strong>lonjovialidade</strong>: longevidade com jovialidade.
@@ -151,13 +154,13 @@ export default function LandingPage() {
               />
               <div>
                 <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
-                  Sobre
+                  Sobre Andrea Orlandi
                 </div>
                 <h2 className="text-3xl md:text-4xl font-semibold mt-1">Andrea Orlandi</h2>
               </div>
             </div>
             <p className="text-lg leading-relaxed text-[#355a77]">
-              Andrea Orlandi é uma experiente professora de natação e empreendedora, com forte atuação no Rio de Janeiro e especialização em águas abertas e preparação física.
+              <strong>Andrea Orlandi</strong> é uma experiente professora de natação e empreendedora, com forte atuação no Rio de Janeiro e especialização em águas abertas e preparação física.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
               Com mais de 20 anos de trajetória, tornou-se referência no treinamento de equipes de natação no mar, especialmente na região de Copacabana, unindo técnica, segurança e paixão pelo ambiente marinho.
@@ -184,8 +187,8 @@ export default function LandingPage() {
             <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
               Em 2025 cumpriu o impressionante desafio de nadar <strong>70 km em 7 dias aos 70 anos</strong>, reforçando que longevidade e movimento caminham juntos e que idade não é limite para quem se prepara para o futuro.
             </p>
-             <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
-              O desafio inspirou a produção do documentário Véia Nada, que começa a ser exibido em festivais.
+            <p className="mt-4 text-lg leading-relaxed text-[#355a77]">
+              O desafio inspirou a produção do documentário <strong>Véia Nada</strong>, que começa a ser exibido em festivais.
             </p>
             <div className="mt-8">
               <a
@@ -205,7 +208,7 @@ export default function LandingPage() {
             />
             <div className="p-8 md:p-10">
               <div className="text-sm uppercase tracking-[0.25em] text-[#2a7fb8] font-semibold">
-                O local do evento
+                Sobre o local do evento
               </div>
               <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight">
                 Posto 6, Copacabana
@@ -241,7 +244,7 @@ export default function LandingPage() {
                 <span className="text-2xl">📅</span>
                 <div>
                   <div className="font-semibold">Data</div>
-                  <div className="text-[#d6edf8]">23 de maio</div>
+                  <div className="text-[#d6edf8]">23 de maio, às 08:00</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
